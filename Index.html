@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Memory Book</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://unpkg.com/page-flip/dist/css/page-flip.css">
+</head>
+
+<body>
+
+<div class="book-wrapper">
+
+  <div id="book">
+
+    <!-- COVER -->
+    <div class="page">
+      <img src="cover.jpg" alt="">
+    </div>
+
+    <!-- VIDEO 1 -->
+    <div class="page">
+      <video autoplay muted loop playsinline>
+        <source src="1.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <!-- VIDEO 2 -->
+    <div class="page">
+      <video autoplay muted loop playsinline>
+        <source src="2.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <!-- VIDEO 3 -->
+    <div class="page">
+      <video autoplay muted loop playsinline>
+        <source src="3.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <!-- VIDEO 4 -->
+    <div class="page">
+      <video autoplay muted loop playsinline>
+        <source src="4.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <!-- END PAGE -->
+    <div class="page">
+      <img src="end.jpg" alt="">
+    </div>
+
+    <!-- VOICEMAIL -->
+    <div class="page">
+      <div class="voicemail-page">
+
+        <div class="call-icon">📞</div>
+
+        <h2>Voicemail</h2>
+
+        <p>From: Bhondu ❤️</p>
+
+        <audio controls>
+          <source src="voicemail.mp3" type="audio/mpeg">
+        </audio>
+
+        <p class="play-text">
+          Press play to listen 💖
+        </p>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- POPUP -->
+
+<div id="finalPopup">
+
+  <div class="popup-content">
+
+    <div class="teddy">🧸</div>
+
+    <h2>
+      This is a small gift to my mommy 😋💖
+    </h2>
+
+    <button onclick="closePopup()">
+      I Love You Babe ❤️
+    </button>
+
+  </div>
+
+</div>
+
+<script src="https://unpkg.com/page-flip/dist/js/page-flip.browser.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
