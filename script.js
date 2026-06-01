@@ -21,7 +21,9 @@ const pageFlip = new St.PageFlip(
 pageFlip.loadFromHTML(
   document.querySelectorAll(".page")
 );
-
+document.querySelectorAll("video").forEach(v => {
+  v.volume = 1;
+});
 /* POPUP ON LAST PAGE */
 
 pageFlip.on("flip", (e) => {
